@@ -1,0 +1,25 @@
+{
+    "name": "appel",
+    "displayName": "appel",
+    "description": "Language support for Appel (AGILA ProPErty and Dependency Description Language)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "appel",
+            "aliases": ["appel", "appel"],
+            "extensions": ["appel"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "appel",
+            "scopeName": "source.appel",
+            "path": "./syntaxes/appel.tmLanguage.json"
+        }]
+    }
+}

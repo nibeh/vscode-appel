@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "appel",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.appel",
+					"match": "\\b(Library|Function|Property|hasElement|Requirement|hasRelation|Implements|Component|isA)\\b"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"match": "\/\/.*"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.appel",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.appel",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.appel"
+}
